@@ -1,0 +1,119 @@
+#home {
+    text-align: center;
+    /* justify-content: center; */
+    display: flex;
+    /* height: 90vh; */
+    /* flex-direction: column; */
+    /* margin-top: 20px; */
+    /* background-color: yellow; */
+}
+
+#home-p{
+    color: #f2f2f2;
+    margin-top: 350px;
+    font-family: nunito sans;
+    font-weight: 500;
+    font-size: x-large;
+    text-transform: capitalize;
+}
+
+#home-p span {
+    font-family: poppins;
+    color: #f96d00;
+    font-weight: 700;
+    font-size: xx-large;
+    z-index: 1;
+}
+
+
+
+#home #img-container img{
+    z-index: 1;
+    margin-top: 10vh;
+    position: relative;
+    height:90vh;
+    /* background-color: rgb(240, 244, 244); */;
+    background: #393e46;
+    /* border-radius: 50%; */
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+
+}
+
+img {
+    object-fit: cover;
+    /* height: 100%; */
+    size: 100%;
+    z-index: -1;
+}
+
+.pic-wrap {
+    z-index: 1;
+    
+}
+
+.button-home {
+    margin-top: 10px;
+    background-color: #f1edc0;
+    border-radius: 100px;
+    box-shadow: #f96d00;
+    color: #f96d00;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;                                                                                  
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+.button-home a {
+    text-decoration: none;
+    color: #f96d00;
+  }
+.button-home:hover {
+    box-shadow: #f96d00;
+    transform: scale(1.05) rotate(-1deg);
+  }
+
+  
+
+@media (max-width: 1250px) {
+    #home {
+        flex-direction: column;
+    }
+
+    #home #img-container img {
+        width: 60%;
+        height: 80%;
+        margin-top: 120px;
+        border-radius: 50%;
+        /* clip-path: polygon(30% 0%, 50% 15%, 70% 0%, 90% 10%, 100% 35%, 80% 70%, 50% 100%, 20% 70%, 0% 35%, 10% 10%); */
+        background-color: #393e46;
+    }
+    img {
+        height: 100%;
+    }
+    #home-p {
+        margin-top: 70px;
+        font-size: medium;
+    }
+    #home-p span  {
+        font-size: large;
+    }
+    .pic-wrap{
+        filter: drop-shadow(-1px 6px 3px rgba(38, 38, 30, 0.5));
+      }
+}
+
+
+@media (max-width: 450px)  {
+    #home  {
+        padding-top: 150px;
+    }
+}
